@@ -43,13 +43,6 @@ top_processes_memory() {
   echo ""
 }
 
-# Function to display Top 5 processes by Memory usage
-top_processes_memory() {
-  echo "Top 5 Processes by Memory Usage:"
-  ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -6
-  echo ""
-}
-
 # Function to display OS version
 os_version() {
   echo "OS Version:"
